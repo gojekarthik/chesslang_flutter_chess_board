@@ -23,7 +23,7 @@ class ChessBoard extends StatefulWidget {
 
   final PlayerColor boardOrientation;
 
-  final VoidCallback? onMove;
+  final void Function(String from, String to)? onMove;
 
   final List<BoardArrow> arrows;
 
@@ -128,7 +128,7 @@ class _ChessBoardState extends State<ChessBoard> {
                         );
                       }
                       if (game.turn != moveColor) {
-                        widget.onMove?.call();
+                        widget.onMove?.call(pieceMoveData.squareName, squareName);
                       }
                     });
 
@@ -181,7 +181,7 @@ class _ChessBoardState extends State<ChessBoard> {
       case BoardColor.orange:
         return Image.asset(
           "images/orange_board.png",
-          package: 'flutter_chess_board',
+          package: 'chesslang_chess_board',
           fit: BoxFit.cover,
         );
     }

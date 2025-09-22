@@ -1,7 +1,7 @@
-name: flutter_chess_board
-description: A Chessboard Widget for Flutter. Full support for PGN, FEN, SAN. Undo move, multiple board colors and arrow support.
-version: 1.0.1
-repository: https://www.github.com/deven98/flutter_chess_board
+name: chesslang_chess_board
+description: Custom chessboard package with enhanced move callbacks for ChessLang. Full support for PGN, FEN, SAN. Undo move, multiple board colors and arrow support.
+version: 1.0.2
+repository: https://github.com/gojekarthik/chesslang_chess_board
 
 dependencies:
   chess: ^0.7.0
